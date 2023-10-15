@@ -1,0 +1,3 @@
+pyTelegramBotAPI
+wikipedia
+bs4

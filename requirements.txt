@@ -1,0 +1,12 @@
+pyTelegramBotApi
+fake_useragent
+requests
+openpyxl
+BeautifulSoup4
+lxml
+phonenumbers
+wikipedia
+gtts
+moviepy
+numpy
+g4f
