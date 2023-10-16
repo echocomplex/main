@@ -8,7 +8,7 @@
 
 <h1 align=center>How about a little more detail?</h1>
 
-<h3 align=center>At the moment te project has 9 bots with a simple and intuitive interface.</h3>
+<h3 align=center>At the moment project has 9 bots with a simple and intuitive interface.</h3>
 
 <h3 align=center>Bots can be added and improved at the expense of the community (but the copyright holder will remain echo's dev)</h3>
 
