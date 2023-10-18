@@ -7,7 +7,7 @@
 
 <h2 align=center><img src="https://github.com/echocomplex/main/assets/102752755/45ae4966-c4b4-478b-ae9b-4ef7f26d0427"><img src="https://github.com/echocomplex/main/assets/102752755/8fe33ee8-0619-4c17-a734-fba9f6695e81"><img src="https://github.com/echocomplex/main/assets/102752755/86e8d174-3302-40b2-93d9-0ad5c23e5c32"></h2>
 
-<h2 align=center>Used libraries: <i>pyTelegramBotAPI, moviepy, numpy</i></h2>
+<h2 align=center>Used libraries: <i>pyTelegramBotAPI, moviepy, numpy, random, sqlite3</i></h2>
 
 <h2 align=center>All info about code can be found in files, in the «DESRIPTION FOR DEVELOPERS»</h2>
 
