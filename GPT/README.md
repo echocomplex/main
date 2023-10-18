@@ -7,7 +7,7 @@
 
 <h2 align=center><img src="https://github.com/echocomplex/main/assets/102752755/7e637063-2ec2-4ed2-a94d-992eb7343448"></h2>
 
-<h2 align=center>Used libraries: <i>pyTelegramBotAPI, g4f</i></h2>
+<h2 align=center>Used libraries: <i>pyTelegramBotAPI, g4f, sqlite3</i></h2>
 
 <h2 align=center>All info about code can be found in files, in the «DESRIPTION FOR DEVELOPERS»</h2>
 
