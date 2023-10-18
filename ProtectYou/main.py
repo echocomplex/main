@@ -30,7 +30,7 @@ print("Starting...");
 
 
 """ IMPORTS """
-from telebot import TeleBot
+from telebot import TeleBot;
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton;
 from privacy import *;
 from messages import *;
