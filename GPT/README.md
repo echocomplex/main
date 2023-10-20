@@ -1,4 +1,4 @@
-<h1 align=center><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=50&pause=1000&color=FFFFFF&center=true&vCenter=true&width=500&lines=ChatGPT+Telegram"></h1>
+<h1 align=center><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=50&pause=1000&color=787878&center=true&vCenter=true&width=500&lines=ChatGPT+Telegram"></h1>
 <h1 align=center><img src="https://github.com/echocomplex/main/assets/102752755/37dcfe2f-6894-4a83-b2a5-6558cd82484c"></h1>
 
 --- 
