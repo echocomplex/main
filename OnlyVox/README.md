@@ -1,4 +1,4 @@
-<h1 align=center><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=50&pause=1000&color=FFFFFF&center=true&vCenter=true&width=300&lines=OnlyVox"></h1>
+<h1 align=center><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=50&pause=1000&color=787878&center=true&vCenter=true&width=300&lines=OnlyVox"></h1>
 <h1 align=center><img src="https://github.com/echocomplex/main/assets/102752755/9fb0b883-95db-4993-abfe-a6351f6bea15"></h1>
 
 --- 
