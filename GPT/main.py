@@ -14,9 +14,7 @@ the text of buttons and callback_data - from the file buttons.py
 
 Working with the database is done through database.py
 
-All randomization is done through a class Randomizer that is in the file randomizer.py
-
-Information from Wikipedia is taken through the Wikipedia class, which is located in the file work_with_wiki.py
+Working with ChatGPT is done through ai.py
 
 privacy.py should contain token, tuple with administrators, email and password for mail client
 (detailed information in the file)
