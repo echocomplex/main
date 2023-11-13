@@ -8,25 +8,6 @@ Using g4f from gpt4free by xtekky (https://github.com/xtekky/gpt4free/)
 import g4f;
 from g4f.Provider import *;
 
-providers = (AItianhu, AItianhuSpace,
-             Acytoo, AiAsk,
-             Aibn, Aichat,
-             Ails, Bing,
-             ChatForAi, Chatgpt4Online,
-             ChatgptAi, ChatgptDemo,
-             ChatgptDuo, ChatgptFree,
-             ChatgptLogin, ChatgptX,
-             Cromicle, DeepInfra,
-             FakeGpt, FreeGpt,
-             GPTalk, GeekGpt,
-             GptChatly, GptForLove,
-             GptGo, GptGod,
-             Hashnode, Liaobots,
-             Llama2, MyShell,
-             NoowAi, Opchatgpts,
-             Phind, Vercel,
-             Ylokh, You, Yqcloud);
-
 class ChatGPT:
     def __init__ (self) -> None:
         self.__messages: list = [];
@@ -40,21 +21,26 @@ class ChatGPT:
         while (True):
             if (stat > 5):
                 raise Exception("Something went wrong... Try again later.");
-            for prov in providers:
-                try:
-                    response = g4f.ChatCompletion.create(
-                        model="gpt-3.5-turbo",
-                        messages=self.__messages,
-                        stream=False,
-                        provider=prov
-                    );
-                    break;
-                except Exception:
-                    continue;
-            if (('<!DOCTYPE html>' in response) or ("流量异常" in response)):
+            try:
+                response = g4f.ChatCompletion.create(
+                    model=g4f.models.gpt_35_turbo,
+                    messages=self.__messages
+                );
+            except Exception as e:
+                print(e);
+                stat: int = 0;
+                continue;
+            if (('<!DOCTYPE html>' in response) or ("流量异常" in response) or (response == "") or ("chatbase" in response)):
                 stat += 1;
                 continue;
             else:
                 break;
         return response;
+
+
+
+if (__name__ == "__main__"):
+    chat = ChatGPT();
+    chat.add_bot_message("");
+    print(chat.generate_response("Hello!"));
 
