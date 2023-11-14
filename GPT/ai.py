@@ -30,7 +30,7 @@ class ChatGPT:
                 print(e);
                 stat: int = 0;
                 continue;
-            if (('<!DOCTYPE html>' in response) or ("流量异常" in response) or (response == "") or ("chatbase" in response)):
+            if (('<!DOCTYPE html>' in response) or ("流量异常" in response) or (response == "") or ("chatbase" in response.lower())):
                 stat += 1;
                 continue;
             else:
