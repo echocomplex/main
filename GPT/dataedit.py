@@ -126,6 +126,10 @@ if (__name__ == "__main__"):
     connection2 = sqlite3.Connection("channels.db");
     cursor = connection.cursor();
     cursor2 = connection2.cursor();
+    cursor.execute(""" CREATE TABLE users (chat_id INTEGER PRIMARY KEY, language TEXT) """);
+    connection.commit();
+    cursor2.execute(""" CREATE TABLE channels (channel_id INTEGER PRIMARY KEY, channel_name TEXT, channel_link TEXT) """);
+    connection2.commit();
     cursor.execute(""" SELECT * FROM users """);
     print(cursor.fetchall());
     cursor2.execute(""" SELECT * FROM channels """);

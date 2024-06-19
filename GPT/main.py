@@ -28,6 +28,7 @@ print("Starting...");
 
 
 """ IMPORTS """
+import telebot
 from telebot import TeleBot;
 from telebot.types import InlineKeyboardButton, InlineKeyboardMarkup;
 from privacy import TOKEN, administrators;
@@ -229,9 +230,27 @@ def generate_response (message, bot_message: str = "") -> None:
         ### PARSE RESPONSE ###
         for i in range(len(response) // 4084 + 1):  # one telegram message can contain <= 4084 chars
             if (len(response) <= 4084):
-                bot.send_message(message.chat.id, text=response);
+                try:
+                    bot.send_message(message.chat.id, text=response, parse_mode="MarkdownV2");
+                except Exception:
+                    response = response.replace("=", "\\=");
+                    response = response.replace("-", "\\-");
+                    response = response.replace(".", "\\.");
+                    response = response.replace("(", "\\(");
+                    response = response.replace(")", "\\)");
+                    response = response.replace("+", "\\+");
+                    bot.send_message(message.chat.id, text=response, parse_mode="MarkdownV2");
             else:
-                bot.send_message(message.chat.id, text=response[:4084]);
+                try:
+                    bot.send_message(message.chat.id, text=response[:4084], parse_mode="MarkdownV2");
+                except Exception:
+                    response = response.replace("=", "\\=");
+                    response = response.replace("-", "\\-");
+                    response = response.replace(".", "\\.");
+                    response = response.replace("(", "\\(");
+                    response = response.replace(")", "\\)");
+                    response = response.replace("+", "\\+");
+                    bot.send_message(message.chat.id, text=response[:4084], parse_mode="MarkdownV2");
                 response = response[4084::];
         bot.register_next_step_handler(message, generate_response, bot_message=response);
     except Exception as ex:
